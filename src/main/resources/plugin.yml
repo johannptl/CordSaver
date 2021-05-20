@@ -1,0 +1,11 @@
+name: position
+version: ${project.version}
+main: com.pagchake.position.Main
+api-version: 1.16
+authors: [ 420 ]
+description: 187
+website: https://google.com
+
+commands:
+   cords:
+      description: Ich mag 187
