@@ -10,6 +10,12 @@
 /cords delete <Name> | Deletes the position of <Name>  
 /cords add <Name> <X> <Y> <Z> <World (o for Overwolrd, n for Nether, e for The End)> | Add Custom Cords 
 
+/cords  
+![cords](https://github.com/JohannLULW/CordSaver/blob/master/img/cords.png)  
+/cords save  
+![save](https://github.com/JohannLULW/CordSaver/blob/master/img/cords.png)  
+/cords  show  
+![save](https://github.com/JohannLULW/CordSaver/blob/master/img/show.png)  
 # Source Code
 
 [GitHub](https://github.com/JohannLULW/CordSaver)
@@ -20,4 +26,3 @@
 [Twitter](https://twitter.com/420johann)  
 [GitHub](https://github.com/JohannLULW/)  
 [Discord](https://discord.gg/zhdbzgTD)  
-
