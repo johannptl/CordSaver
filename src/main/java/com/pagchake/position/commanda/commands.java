@@ -27,17 +27,17 @@ public class commands implements CommandExecutor {
             if (args.length == 0) {
                 File file = new File("plugins//CordsConfig//" + sender.getName() + ".yml");
                 YamlConfiguration yamlConfiguration = YamlConfiguration.loadConfiguration(file);
-				player.sendMessage("§6--=={ All Cords }==--");
-				player.sendMessage(" ");
-				for(String current : yamlConfiguration.getKeys(true)) {
-                    if(yamlConfiguration.getList(current).get(3).equals("world_nether")) {
+		player.sendMessage("§6--=={ All Cords }==--");
+		player.sendMessage(" ");
+		for(String current : yamlConfiguration.getKeys(true)) {
+                  if(yamlConfiguration.getList(current).get(3).equals("world_nether")) {
                         player.sendMessage("§8- §e" + current + " §8| §4" + yamlConfiguration.getList(current).get(0) + "§8, §4" + yamlConfiguration.getList(current).get(1) + "§8, §4" + yamlConfiguration.getList(current).get(2));
-                    } else if (yamlConfiguration.getList(current).get(3).equals("world_the_end")) {
-                        player.sendMessage("§8- §e" + current + " §8| §5" + yamlConfiguration.getList(current).get(0) + "§8, §5" + yamlConfiguration.getList(current).get(1) + "§8, §5" + yamlConfiguration.getList(current).get(2));
-                    } else {
-                        player.sendMessage("§8- §e" + current + " §8| §2" + yamlConfiguration.getList(current).get(0) + "§8, §2" + yamlConfiguration.getList(current).get(1) + "§8, §2" + yamlConfiguration.getList(current).get(2));
-                    }
-				}
+                  } else if (yamlConfiguration.getList(current).get(3).equals("world_the_end")) {
+                      	player.sendMessage("§8- §e" + current + " §8| §5" + yamlConfiguration.getList(current).get(0) + "§8, §5" + yamlConfiguration.getList(current).get(1) + "§8, §5" + yamlConfiguration.getList(current).get(2));
+                  } else {
+                       	player.sendMessage("§8- §e" + current + " §8| §2" + yamlConfiguration.getList(current).get(0) + "§8, §2" + yamlConfiguration.getList(current).get(1) + "§8, §2" + yamlConfiguration.getList(current).get(2));
+                  }
+		}
                 sender.sendMessage(" ");
             } else if (args.length == 2) {
                 File file = new File("plugins//CordsConfig//" + sender.getName() + ".yml");
@@ -164,23 +164,23 @@ public class commands implements CommandExecutor {
         NamespacedKey key = new NamespacedKey(Main.getPlugin(), player.getName());
         Bukkit.getBossBar(key).removePlayer(player);
 
-		if(yamlConfiguration.getList(text).get(3).equals("world_nether")) {
+	if(yamlConfiguration.getList(text).get(3).equals("world_nether")) {
         bar = Bukkit.createBossBar(key,"X: §e" + yamlConfiguration.getList(text).get(0) + " §fY: §e" + yamlConfiguration.getList(text).get(1) + " §fZ: §e" + yamlConfiguration.getList(text).get(2), BarColor.RED, BarStyle.SOLID);
        	} else if (yamlConfiguration.getList(text).get(3).equals("world_the_end")) {
         bar = Bukkit.createBossBar(key, "X: §e" + yamlConfiguration.getList(text).get(0) + " §fY: §e" + yamlConfiguration.getList(text).get(1) + " §fZ: §e" + yamlConfiguration.getList(text).get(2), BarColor.PURPLE, BarStyle.SOLID);
         } else {
         bar = Bukkit.createBossBar(key,"X: §e" + yamlConfiguration.getList(text).get(0) + " §fY: §e" + yamlConfiguration.getList(text).get(1) + " §fZ: §e" + yamlConfiguration.getList(text).get(2), BarColor.GREEN, BarStyle.SOLID);
-		}
-		bar.addPlayer(player);
-		bar.setProgress(1);
-		bar.setVisible(true);
+	}
+	bar.addPlayer(player);
+	bar.setProgress(1);
+	bar.setVisible(true);
 
     }
 
 	public void removeBar(Player player) {
 
         NamespacedKey key = new NamespacedKey(Main.getPlugin(), player.getName());
-		Bukkit.getBossBar(key).removePlayer(player);
+	Bukkit.getBossBar(key).removePlayer(player);
 
 	}
 
@@ -188,14 +188,14 @@ public class commands implements CommandExecutor {
         sender.sendMessage("§6--=={ Usage }==--");
         sender.sendMessage(" ");
         sender.sendMessage("§b/cords §8| §7Lists all saved cords");
-		sender.sendMessage("§b/cords help §8| §7Shows this help Message");
-		sender.sendMessage("§b/cords save <Name> §8| §7Saves your current position as <Name>");
-		sender.sendMessage("§b/cords get <Name> §8| §7Writes the saved position of <Name> in your chat");
-		sender.sendMessage("§b/cords show <Name> §8| §7Shows the position of <Name> in your bossbar");
-		sender.sendMessage("§b/cords clear §8| §7Lets the bossbar disappear");
+	sender.sendMessage("§b/cords help §8| §7Shows this help Message");
+	sender.sendMessage("§b/cords save <Name> §8| §7Saves your current position as <Name>");
+	sender.sendMessage("§b/cords get <Name> §8| §7Writes the saved position of <Name> in your chat");
+	sender.sendMessage("§b/cords show <Name> §8| §7Shows the position of <Name> in your bossbar");
+	sender.sendMessage("§b/cords clear §8| §7Lets the bossbar disappear");
         sender.sendMessage("§b/cords rename <Name> <New Name> §8| §7Rename Cords");
-		sender.sendMessage("§b/cords delete <Name> §8| §7Deletes the position of <Name>");
+	sender.sendMessage("§b/cords delete <Name> §8| §7Deletes the position of <Name>");
         sender.sendMessage("§b/cords add <Name> <X> <Y> <Z> <World (o for Overwolrd, n for Nether, e for The End)> §8| §7Add Custom Cords");
-		sender.sendMessage(" ");
+	sender.sendMessage(" ");
     }
 }
