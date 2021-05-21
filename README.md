@@ -1,3 +1,6 @@
+# CurseForge
+[CordSaver on CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/cordsaver)
+
 # Usage
 
 /cords | Lists all saved cords  
