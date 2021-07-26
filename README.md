@@ -1,6 +1,3 @@
-# CurseForge
-[CordSaver on CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/cordsaver)
-
 # Usage
 
 /cords | Lists all saved cords  
@@ -20,10 +17,6 @@
 ![show](./img/show.png)  
 /cords  show  
 ![save](./img/save.png)  
-# Source Code
-
-[GitHub](https://github.com/JohannLULW/CordSaver)
-
 
 # Socials
 
