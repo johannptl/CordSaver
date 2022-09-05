@@ -1,3 +1,5 @@
+``` NOT THE NEWEST RELEASE ``` (to get the newest releas with a lot more features DM me on Twitter)
+
 # Usage
 
 /cords | Lists all saved cords  
