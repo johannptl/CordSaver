@@ -16,9 +16,9 @@
 /cords  
 ![cords](https://github.com/JohannLULW/CordSaver/blob/master/img/cords.png)  
 /cords save  
-![show](./img/show.png)  
-/cords  show  
 ![save](./img/save.png)  
+/cords  show  
+![show](./img/show.png)  
 
 # Socials
 
